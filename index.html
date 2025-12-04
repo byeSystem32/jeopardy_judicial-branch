@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judicial Branch Jeopardy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar">
+      <div class="title-wrap">
+        <h1>Judicial Branch Jeopardy</h1>
+        <p class="subtitle">Review game on the U.S. Judicial Branch &amp; Supreme Court</p>
+      </div>
+      <div class="score-panel">
+        <div class="score-label">Score</div>
+        <div id="scoreValue" class="score-value">$0</div>
+        <button id="resetGameBtn" class="btn secondary">Reset Game</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="board-container">
+        <div id="board" class="board" aria-label="Jeopardy game board">
+          <!-- Filled by script.js -->
+        </div>
+      </section>
+
+      <section class="instructions">
+        <h2>How to Play</h2>
+        <ul>
+          <li>Click a dollar amount under a category to reveal a clue.</li>
+          <li>Type your answer in the box and press <strong>Submit Answer</strong>.</li>
+          <li>Correct answers <strong>add</strong> the clue value to your score; incorrect answers <strong>subtract</strong> it.</li>
+          <li>Use <strong>Show Answer</strong> if you are stuck (no score change).</li>
+          <li>When all tiles are used, press <strong>Reset Game</strong> to play again.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Designed for civics review. Content focuses on the U.S. judicial branch, federal courts, and landmark Supreme Court cases.</p>
+    </footer>
+  </div>
+
+  <!-- Modal for questions -->
+  <div id="questionModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalCategoryLabel modalValueLabel modalQuestionText">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <header class="modal-header">
+        <div class="modal-category">
+          <span id="modalCategoryLabel" class="modal-category-text"></span>
+        </div>
+        <div id="modalValueLabel" class="modal-value"></div>
+      </header>
+
+      <div class="modal-body">
+        <p id="modalQuestionText" class="modal-question-text"></p>
+        <label for="answerInput" class="answer-label">Your answer:</label>
+        <input id="answerInput" class="answer-input" type="text" autocomplete="off" />
+        <p id="feedbackText" class="feedback-text" aria-live="polite"></p>
+      </div>
+
+      <footer class="modal-footer">
+        <button id="submitAnswerBtn" class="btn primary">Submit Answer</button>
+        <button id="showAnswerBtn" class="btn ghost">Show Answer</button>
+        <button id="closeModalBtn" class="btn secondary">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
