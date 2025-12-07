@@ -5,7 +5,6 @@ A high-quality, Jeopardy-style review game focused on the **U.S. judicial branch
 - No backend required
 - Pure **HTML / CSS / JavaScript**
 - Works on desktop, Chromebook, Mac, Windows, and tablets
-- Great for civics review or classroom games
 
 ## Files
 
@@ -21,27 +20,11 @@ A high-quality, Jeopardy-style review game focused on the **U.S. judicial branch
 
 No build steps, no dependencies — everything is static.
 
-## How to Deploy on GitHub Pages
-
-1. Create a new GitHub repository (or use an existing one).
-2. Add these files to the **root** of the repo (or a `docs/` folder).
-3. Commit and push.
-
-### Enable GitHub Pages
-
-1. Go to your repository **Settings** → **Pages**.
-2. Under **Source**, choose:
-   - `main` branch, `/ (root)` (if files are in root), or
-   - `main` branch, `/docs` (if files are in `docs/`).
-3. Click **Save**.
-
-After a short time, your Jeopardy game will be live at:
+## How to Access on GitHub Pages
 
 ```text
-https://<your-username>.github.io/<your-repo-name>/
+https://byeSystem32.github.io/jeopardy_judicial-branch/
 ```
-
-You and your students can now play directly in the browser.
 
 ## Game Content Overview
 
@@ -63,5 +46,3 @@ The answer checking is **forgiving**:
 - Ignores capitalization and punctuation
 - Accepts equivalent numeric forms (e.g., `9` vs. `nine`)
 - Allows minor wording differences as long as key terms are present
-
-Perfect for quick review, test prep, or interactive classroom competition.
